@@ -3,3 +3,7 @@
 /SpuerMarketOnLine/.classpath
 /SpuerMarketOnLine/.gradle
 /SpuerMarketOnLine/bin
+/SpuerMarketOnLineStatic/node_modules
+/SpuerMarketOnLineStatic/dist
+/SpuerMarketOnLineStatic/nginx/temp
+/SpuerMarketOnLineStatic/nginx/logs
