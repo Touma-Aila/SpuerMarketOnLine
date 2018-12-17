@@ -27,9 +27,9 @@ public class ControllerToken extends BaseAop {
   /**
    * -处理客户端提交的Token
    *
-   * @param pjp
-   * @return
-   * @throws Exception
+   * @param pjp 提交的Token数据
+   * @return 提交结果
+   * @throws Exception 处理数据发生错误
    */
   private TbToken processInputToken(ProceedingJoinPoint pjp) throws Exception {
     TbToken token = null;
@@ -58,9 +58,9 @@ public class ControllerToken extends BaseAop {
   /**
    * -处理应答的Token信息
    *
-   * @param result
-   * @param token
-   * @throws Exception
+   * @param result 应答Token信息数据
+   * @param token 应答结果
+   * @throws Exception 处理数据发生错误
    */
   private void processResponseToken(Object result, TbToken token) throws Exception {
     // 回发token信息
@@ -73,9 +73,9 @@ public class ControllerToken extends BaseAop {
   /**
    * -控制器token相关切面处理
    * 
-   * @param pjp
-   * @return
-   * @throws Throwable
+   * @param pjp 切面处理数据
+   * @return 处理结果
+   * @throws Throwable 处理数据发生错误
    */
   @Around("controllerPointcut()")
   public Object token(ProceedingJoinPoint pjp) throws Throwable {
