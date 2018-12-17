@@ -31,6 +31,15 @@ public interface TbTypeDAO {
    * @throws Exception 处理发生错误
    */
   public TbType queryAll(TbType tbType) throws Exception;
+  
+  /**
+   * -按名称查询
+   * 
+   * @param tbType 查询数据
+   * @return 查询结果
+   * @throws Exception 处理发生错误
+   */
+  public TbType queryByName(TbType tbType) throws Exception;
 
   /**
    * -添加
